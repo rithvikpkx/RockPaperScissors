@@ -31,6 +31,8 @@ def start_game():
 
     game_window.eval("tk::PlaceWindow . center")
 
+    game_window.geometry("-340+300")
+
     def reset_game():
 
         game_window.destroy()
@@ -135,6 +137,8 @@ welcome_window.configure(bg="black")
 welcome_window.resizable(False, False)
 
 welcome_window.eval("tk::PlaceWindow . center")
+
+welcome_window.geometry("-280+280")
 
 Label(text="Welcome to my Rock Paper Scissors Game", bg='black', fg='white', font=('Consolas', 15, BOLD)).pack(padx=15, pady=15, ipady=5, ipadx=5)
 Label(text="This is a simple game I made using Tkinter", bg='black', fg='white', font=('Consolas', 15, BOLD)).pack(padx=15, pady=15, ipady=5, ipadx=5)
