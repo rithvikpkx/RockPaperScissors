@@ -1,7 +1,6 @@
 from tkinter import *
 from tkinter.font import *
-import random
-import time
+import random, time
 
 items=[
 "Rock",
@@ -29,8 +28,6 @@ def start_game():
     game_window.iconbitmap("game_controller.ico")
 
     game_window.resizable(False, False)
-
-    #game_window.geometry("500x500")
 
     game_window.eval("tk::PlaceWindow . center")
 
