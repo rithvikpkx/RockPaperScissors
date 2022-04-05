@@ -76,31 +76,31 @@ def start_game():
 
         if player_choice == computer_choice:
 
-            game_result.configure(text = "Draw!")
+            game_result.configure(text = "Draw!", fg = "#A020F0")
 
         elif player_choice == "Rock" and computer_choice == "Paper":
 
-            game_result.configure(text = "You Lose!")
+            game_result.configure(text = "You Lose!", fg = "#ff0000")
 
         elif player_choice == "Rock" and computer_choice == "Scissors":
 
-            game_result.configure(text = "You Win!")
+            game_result.configure(text = "You Win!", fg = "#00ff00")
 
         elif player_choice == "Paper" and computer_choice == "Rock":
 
-            game_result.configure(text="You Win!")
+            game_result.configure(text="You Win!", fg = "#00ff00")
 
         elif player_choice == "Paper" and computer_choice == "Scissors":
 
-            game_result.configure(text="You Lose!")
+            game_result.configure(text="You Lose!", fg = "#ff0000")
 
         elif player_choice == "Scissors" and computer_choice == "Rock":
 
-            game_result.configure(text="You Lose!")
+            game_result.configure(text="You Lose!", fg = "#ff0000")
 
         elif player_choice == "Scissors" and computer_choice == "Paper":
 
-            game_result.configure(text="You Win!")
+            game_result.configure(text="You Win!", fg = "#00ff00")
 
         game_result.grid(row=3, column=1, padx=40, pady=40, ipadx=10, ipady=10)
 
